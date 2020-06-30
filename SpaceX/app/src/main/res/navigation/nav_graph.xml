@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.iplato.spacex.ui.ListFragment"
+        android:label="list_fragment"
+        tools:layout="@layout/list_fragment" />
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.iplato.spacex.ui.WelcomeFragment"
+        android:label="welcome_fragment"
+        tools:layout="@layout/welcome_fragment" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_listFragment"
+            app:destination="@id/listFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/welcomeFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+</navigation>
