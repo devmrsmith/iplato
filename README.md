@@ -1,4 +1,4 @@
-# iPlato SpaceX technical exercise
+# iPlato SpaceX Technical Exercise
 
 ### Specification:
 Implement SpaceX ship list informative application:
